@@ -383,6 +383,7 @@ def _build_libraries(case, exeroot, sharedpath, caseroot, cimeroot, libroot, lid
             os.makedirs(shared_item)
 
     mpilib = case.get_value("MPILIB")
+    lilac_mode = case.get_value("LILAC_MODE")
     ufs_driver = os.environ.get("UFS_DRIVER")
     cpl_in_complist = False
     for l in complist:
