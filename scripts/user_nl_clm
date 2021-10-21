@@ -1,11 +1,11 @@
-&clm_inparm
-  create_crop_landunit = .true.
-  fsurdat='/cluster/shared/noresm/inputdata_emerald/marlam/inputdata_CLM1PT_pan/surface_data/surfdata_1x1_Krokstranda_era_simyr2000_evergreen.nc'
-  hist_mfilt = 20
-  hist_nhtfrq = -8760
-  hist_empty_htapes = .true.
-  hist_fincl1 = 'TOTECOSYSC', 'TOTECOSYSN', 'TOTSOMC', 'TOTSOMN', 'TOTVEGC', 'TOTVEGN', 'TLAI', 'GPP', 'CPOOL', 'NPP', 'TWS','H2OSNO'
+  fsurdat='/cluster/shared/noresm/inputdata_emerald/marlam/inputdata_CLM1PT_pan/surface_data/surfdata_1x1_Yakutsk_era_simyr2000_evergreen_SD2.nc' 
+  fates_paramfile ='/cluster/home/marlam/single_cell_experiment/Running_scripts/param_file_evergreen.nc'
+  hist_mfilt=730
   use_bedrock = .true.
+  hist_nhtfrq=-12
+  use_fates_planthydro = .true.
+  use_fates_hardening = .false.
+  hist_fincl1='QROOTSINK','FATES_LWP_SCPF','FATES_SWP_SCPF','FATES_AWP_SCPF','FATES_LTH_SCPF','FATES_SOILMATPOT_SL','H2OVEG','BTRAN','FATES_BTRAN_SCPF','FATES_SOILVWC_SL','FATES_ROOTUPTAKE_SL'
 /
 &ndepdyn_nml
   ndepmapalgo = 'nn'
