@@ -1,4 +1,4 @@
-  fsurdat='/cluster/shared/noresm/inputdata_emerald/marlam/inputdata_CLM1PT_pan/surface_data/surfdata_1x1_Yakutsk_era_simyr2000_evergreen_SD2.nc' 
+  fsurdat='/cluster/shared/noresm/inputdata_emerald/marlam/inputdata_CLM1PT_pan/surface_data/surfdata_1x1_Merrelva_era_simyr2000_evergreen_SD2.nc' 
   fates_paramfile ='/cluster/home/marlam/single_cell_experiment/Running_scripts/param_file_evergreen.nc'
   hist_mfilt=730
   use_bedrock = .true.
