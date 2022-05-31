@@ -3356,9 +3356,11 @@ This allows using a different mpirun command to launch unit tests
       <modules>
         <command name="load">StdEnv</command>
         <command name="load">iimpi/2021a</command>
+        <command name="load">ESMF/8.1.1-intel-2021a</command> 
         <command name="load">netCDF-Fortran/4.5.3-iimpi-2021a</command>  
         <command name="load">CMake/3.20.1-GCCcore-10.3.0</command>
         <command name="load">XML-LibXML/2.0207-GCCcore-10.3.0</command>
+        <command name="load">Python/3.9.5-GCCcore-10.3.0</command>
       </modules>
       <modules comp_interface="nuopc">
         <command name="load">StdEnv</command>
@@ -3366,6 +3368,7 @@ This allows using a different mpirun command to launch unit tests
         <command name="load">CMake/3.20.1-GCCcore-10.3.0</command>
 	<command name="load">PnetCDF/1.12.2-iimpi-2021a</command>
         <command name="load">XML-LibXML/2.0207-GCCcore-10.3.0</command>
+        <command name="load">Python/3.9.5-GCCcore-10.3.0</command>
       </modules>
     </module_system>
     <environment_variables>

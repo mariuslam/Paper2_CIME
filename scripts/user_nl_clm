@@ -1,11 +1,10 @@
-  fsurdat='/cluster/shared/noresm/inputdata_emerald/marlam/inputdata_CLM1PT_pan/surface_data/surfdata_1x1_Merrelva_era_simyr2000_evergreen_SD2.nc' 
-  fates_paramfile ='/cluster/home/marlam/single_cell_experiment/Running_scripts/param_file_evergreen.nc'
-  hist_mfilt=730
+  fates_paramfile ='/cluster/home/marlam/single_cell_experiment/Running_scripts/frost_pfts/param_file_BDE.nc'
+  hist_mfilt=365
   use_bedrock = .true.
-  hist_nhtfrq=-12
-  use_fates_planthydro = .true.
-  use_fates_hardening = .false.
-  hist_fincl1='QROOTSINK','FATES_LWP_SCPF','FATES_SWP_SCPF','FATES_AWP_SCPF','FATES_LTH_SCPF','FATES_SOILMATPOT_SL','H2OVEG','BTRAN','FATES_BTRAN_SCPF','FATES_SOILVWC_SL','FATES_ROOTUPTAKE_SL'
+  hist_nhtfrq=-24
+  use_fates_planthydro = .false.
+  use_fates_frosthard = .true.
+  use_fates_hydrohard = .false.
 /
 &ndepdyn_nml
   ndepmapalgo = 'nn'
